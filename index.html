@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a2926">
+  <meta name="description" content="Интерактивная карта города Сейнт-Твинс и его пригородов.">
+  <title>Сейнт-Твинс — карта города</title>
+  <link rel="stylesheet" href="./vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="./map.css">
+  <script src="./vendor/leaflet/leaflet.js" defer></script>
+  <script src="./map-data.js" defer></script>
+  <script src="./map.js" defer></script>
+</head>
+<body>
+  <header class="toolbar">
+    <div class="brand">
+      <p>Городской атлас</p>
+      <h1>Сейнт-Твинс</h1>
+    </div>
+    <button id="fit" type="button" disabled title="Вернуться к общему виду">Вся карта</button>
+  </header>
+  <main id="map" aria-label="Интерактивная карта Сейнт-Твинс">
+    <p id="map-status" role="status">Загружается карта…</p>
+    <noscript>Включите JavaScript, чтобы пользоваться картой.</noscript>
+  </main>
+</body>
+</html>
